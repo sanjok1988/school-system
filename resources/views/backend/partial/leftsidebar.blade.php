@@ -173,7 +173,7 @@
               </li>
             @endcan
 
-            @can('hrm.work_outside.index')
+            {{-- @can('hrm.work_outside.index')
               <li>
                 <a href="{{ URL::route('hrm.work_outside.index') }}">
                   <i class="glyphicon glyphicon-log-out"></i> <span>Work Outside</span>
@@ -186,7 +186,7 @@
                   <i class="fa fa-cogs"></i> <span>Policy</span>
                 </a>
               </li>
-            @endcan
+            @endcan --}}
         </ul>
       </li>
       @endnotrole
@@ -200,7 +200,7 @@
             </span>
         </a>
         <ul class="treeview-menu">
-          <li>
+          {{-- <li>
             <a href="{{ URL::route('administrator.academic_year') }}">
               <i class="fa fa-calendar-plus-o"></i> <span>Academic Year</span>
             </a>
@@ -214,7 +214,7 @@
             <a href="{{ URL::route('administrator.template.idcard.index') }}">
               <i class="fa fa-id-card"></i> <span>ID Card Template</span>
             </a>
-          </li>
+          </li> --}}
 
           <li>
             <a href="{{URL::route('administrator.user_index')}}">
@@ -285,7 +285,7 @@
                     <i class="fa icon-attendance"></i> <span>Monthly Details Attendance</span>
                   </a>
                 </li>
-                <li>
+                {{-- <li>
                   <a href="#">
                     <i class="fa icon-attendance"></i> <span>Monthly Individual Attendance</span>
                   </a>
@@ -319,7 +319,7 @@
                   <a href="#">
                     <i class="fa icon-payment"></i> <span>Payment History</span>
                   </a>
-                </li>
+                </li> --}}
 
                 <li>
                   <a href="{{route('report.student_list')}}">
@@ -557,7 +557,7 @@
               </a>
             </li>
             @endcan
-            <li class="treeview">
+            {{-- <li class="treeview">
               <a href="#">
                 <i class="fa fa-home"></i>
                 <span>Home</span>
@@ -585,7 +585,7 @@
                 <li><a href="{{ URL::route('site.subscribe') }}"><i class="fa fa-users"></i> Subscribers</a></li>
                 @endcan
               </ul>
-            </li>
+            </li> --}}
              @can('class_profile.index')
               <li>
               <a href="{{ URL::route('class_profile.index') }}">
