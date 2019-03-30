@@ -110,6 +110,11 @@
 <!-- Extra js from child page -->
 @yield("extraScript")
 <!-- END JAVASCRIPT -->
+<script>
+        $(document).ready(function() {
+              $("#crvPop").modal('hide');
+            });
+        </script>
 </body>
 
 </html>
